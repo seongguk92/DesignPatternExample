@@ -11,9 +11,10 @@ namespace SingletonPattern
         {
             Parallel.ForEach(Enumerable.Range(0, 10), idx =>
             {
-                Singleton singleton = Singleton.GetInstance();
-                singleton.Print();
+                Singleton.Instance.Print();
             });
+
+            Console.Read();
         }
     }
 }
