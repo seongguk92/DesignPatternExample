@@ -7,10 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingletonPattern", "Singlet
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StrategyPattern", "StrategyPattern\StrategyPattern.csproj", "{E831D313-0F07-44FF-B4B7-4F7A02D0B73F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B76B1C7C-FFDB-43DE-8604-477E15B8BCC6}"
-	ProjectSection(SolutionItems) = preProject
-		Class Diagram.drawio = Class Diagram.drawio
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatePattern", "StatePattern\StatePattern.csproj", "{22875B71-0218-46DD-BEDC-E94E07F9B502}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +23,10 @@ Global
 		{E831D313-0F07-44FF-B4B7-4F7A02D0B73F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E831D313-0F07-44FF-B4B7-4F7A02D0B73F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E831D313-0F07-44FF-B4B7-4F7A02D0B73F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22875B71-0218-46DD-BEDC-E94E07F9B502}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22875B71-0218-46DD-BEDC-E94E07F9B502}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22875B71-0218-46DD-BEDC-E94E07F9B502}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22875B71-0218-46DD-BEDC-E94E07F9B502}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
