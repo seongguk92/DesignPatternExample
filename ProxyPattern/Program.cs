@@ -6,9 +6,16 @@ namespace ProxyPattern
     {
         static void Main(string[] args)
         {
-            //Proxy를 호출하여 Process 실행
-            Proxy proxy = new Proxy();
-            proxy.Process();
+            User user = new User();
+            Console.WriteLine("User : User code with Service Process");
+            Service service = new Service();
+            user.UserCode(service);
+
+            Console.WriteLine();
+
+            Console.WriteLine("User : User code with Proxy Process");
+            Proxy proxy = new Proxy(service);
+            user.UserCode(proxy);
         }
     }
 }

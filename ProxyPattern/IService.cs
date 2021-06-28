@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ProxyPattern
 {
-    interface IService
+    public interface IService
     {
         void Process();
     }
