@@ -4,7 +4,8 @@ using System.Text;
 
 namespace FacadePattern
 {
-    class CarModel
+    public interface Item
     {
+        int GetWeight(string val);
     }
 }
