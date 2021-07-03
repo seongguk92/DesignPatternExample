@@ -4,25 +4,25 @@ using System.Text;
 
 namespace FacadePattern
 {
-    class Food : Item
+    class Food : IItem
     {
-        private Dictionary<string, int> foods;
+        private Dictionary<string, int> food;
         public Food()
         {
-            foods = new Dictionary<string, int>();
-            foods.Add("양파", 1);
-            foods.Add("초콜릿", 1);
-            foods.Add("수박", 4);
-            foods.Add("과자", 2);
+            food = new Dictionary<string, int>();
+            food.Add("양파", 1);
+            food.Add("초콜릿", 1);
+            food.Add("수박", 4);
+            food.Add("과자", 2);
         }
 
       
         public int GetWeight(string foodName)
         {
             int result = 0;
-            if (foods.ContainsKey(foodName))
+            if (food.ContainsKey(foodName))
             {
-                result = foods[foodName];
+                result = food[foodName];
             }
 
             return result;
