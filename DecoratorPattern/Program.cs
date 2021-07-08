@@ -6,7 +6,13 @@ namespace DecoratorPattern
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ICar objCar = new EconomyCar();
+            CarAccessoriesDecorator carAccessoriesDecorator = new BasicAccessories(objCar);
+            carAccessoriesDecorator = new AdvancedAccessories(carAccessoriesDecorator);
+
+            Console.WriteLine($"Car Detials: {carAccessoriesDecorator.GetDescription()}");
+            Console.WriteLine("\n\n");
+            Console.WriteLine($"Total Prices: {carAccessoriesDecorator.GetCost()}");
         }
     }
 }
