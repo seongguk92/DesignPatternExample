@@ -2,7 +2,7 @@
 
 namespace FactoryAbstractPattern
 {
-    class GreenCompFactory : CompFactory
+    class LightCompFactory : CompFactory
     {
         public Component GetComp (CEnum.EUsage usage)
         {
@@ -10,16 +10,16 @@ namespace FactoryAbstractPattern
             switch(usage)
             {
                 case CEnum.EUsage.BUTTON:
-                    result = new Button();
+                    result = new LightButton();
                     break;
                 case CEnum.EUsage.LIST:
-                    result = new List();
+                    result = new LightList();
                     break;
                 case CEnum.EUsage.DROPDOWN:
-                    result = new DropDown();
+                    result = new LightDropDown();
                     break;
                 default:
-                    result = new Button();
+                    result = new LightButton();
                     break;
             }
 

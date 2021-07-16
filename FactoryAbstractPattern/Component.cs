@@ -4,10 +4,10 @@ namespace FactoryAbstractPattern
 {
     public abstract class Component
     {
-        protected abstract string GetCompName(CEnum.ELight eLight);
-        public Component(CEnum.ELight eLight)
+        protected abstract string GetCompName();
+        public Component()
         {
-            Console.WriteLine($"{this.GetCompName(eLight)} 생성");
+            Console.WriteLine($"{this.GetCompName()} 생성");
         }
     }
 }

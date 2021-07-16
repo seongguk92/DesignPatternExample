@@ -10,12 +10,5 @@ namespace FactoryAbstractPattern
            , LIST
            , DROPDOWN
         }
-
-        public enum ELight
-        {
-            Dark
-           , Yellow
-           , Green
-        }
     }
 }
