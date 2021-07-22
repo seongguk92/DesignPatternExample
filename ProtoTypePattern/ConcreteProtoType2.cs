@@ -8,6 +8,7 @@ namespace ProtoTypePattern
     {
         public override ProtoType Clone()
         {
+            Console.WriteLine("ConcreteProtoType2 Clone");
             return (ConcreteProtoType2)this.MemberwiseClone();
         }
     }
