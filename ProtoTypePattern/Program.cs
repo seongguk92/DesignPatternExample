@@ -6,7 +6,9 @@ namespace ProtoTypePattern
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ProtoTypeFactory protoTypeFactory = new ProtoTypeFactory();
+            var concretePtrotoType1 = protoTypeFactory.Create<ConcreteProtoType1>();
+            var concretePtrotoType2 = protoTypeFactory.Create<ConcreteProtoType2>();
         }
     }
 }
