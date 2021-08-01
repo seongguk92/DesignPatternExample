@@ -6,7 +6,7 @@ namespace FactoryAbstractPattern
     {
         public enum EUsage
         {
-            BUTTON
+            BUTTON 
            , LIST
            , DROPDOWN
         }
