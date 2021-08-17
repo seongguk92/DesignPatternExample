@@ -37,7 +37,6 @@ namespace SingletonPattern
                 return _instance;
             }
         }
-
         public void Print() => System.Console.WriteLine($"SAVE TIME: {saveTime}");
 
 #else
