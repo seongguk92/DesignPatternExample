@@ -12,7 +12,7 @@ namespace SingletonPattern
         private static string saveTime;
         private Singleton()//생성자를 private로 하고 GetInstance로 개체 생성
         {
-            saveTime = $"{Guid.NewGuid():N}";
+            saveTime = $"절대값 : {Guid.NewGuid():N}";
         }
 
 
