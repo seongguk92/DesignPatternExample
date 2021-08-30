@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Velog_SingletonPattern
 {
@@ -6,7 +8,24 @@ namespace Velog_SingletonPattern
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Task.Run(() =>
+            {
+                Process();
+            });
+            
+            Resource.Instance.AddUnit("Marine");
+            Resource.Instance.AddUnit("Firebat");
+            Resource.Instance.AddUnit("Ghost");
+            Resource.Instance.AddUnit("Medic");
+        }
+        
+        private static void Process()
+        {
+            while (true)
+            {
+                Resource.Instance.Work();
+                Thread.Sleep(1000);
+            }
         }
     }
 }

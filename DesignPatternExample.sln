@@ -40,7 +40,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProtoTypePattern", "ProtoTy
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MementoPattern", "MementoPattern\MementoPattern.csproj", "{3F38FEA0-5EB9-45FE-8531-5A217EE00AD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Velog-SingletonPattern", "Velog-SingletonPattern\Velog-SingletonPattern.csproj", "{41B828B3-7E11-442C-970F-506DF18E2D05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Velog_SingletonPattern", "Velog-SingletonPattern\Velog_SingletonPattern.csproj", "{41B828B3-7E11-442C-970F-506DF18E2D05}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
